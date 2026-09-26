@@ -1,14 +1,13 @@
-
 import React from "react";
 import Image from "next/image";
 import ImageBanner from "@/assist/banner.png";
+
+// this is my banner section
 
 const Banner = () => {
   return (
     <section className="mt-5 px-3 sm:mt-8 sm:px-5 lg:mt-10">
       <div className="container mx-auto flex flex-col justify-between gap-8 rounded-2xl bg-[#1F2937] p-5 pt-10 pb-8 sm:p-8 lg:flex-row lg:p-12 lg:pt-16 lg:pb-10">
-
-  
         <div className="flex-1">
           <h2 className="pb-4 text-[10px] font-bold leading-none text-[#C2F800] sm:text-[11px]">
             WORKOUT LIBRARY
@@ -31,7 +30,6 @@ const Banner = () => {
           </button>
         </div>
 
-
         <div className="flex flex-1 items-center justify-center lg:justify-end">
           <Image
             src={ImageBanner}
@@ -40,7 +38,6 @@ const Banner = () => {
             priority
           />
         </div>
-
       </div>
     </section>
   );
