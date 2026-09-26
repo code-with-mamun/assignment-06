@@ -33,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Navbar />
           {/* the children for home page */}
           {children}
+          {/* for showing toastify  */}
           <ToastContainer />
           <Footer />
         </Cardcontext>
