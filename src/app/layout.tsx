@@ -31,6 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Cardcontext>
           {/* Navbar  */}
           <Navbar />
+          {/* the children for home page */}
           {children}
           <ToastContainer />
           <Footer />
