@@ -14,58 +14,46 @@ interface CardContextType {
 }
 
 export const Cardprovider = createContext<CardContextType | undefined>(
-  undefined
+  undefined,
 );
 
 const Cardcontext = ({ children }: { children: React.ReactNode }) => {
   const [todayPlan, setTodayPlan] = useState<AType[]>([]);
   const [saved, setSaved] = useState<AType[]>([]);
 
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  // **********************************
+  useEffect(() => {
+    const storedTodayPlan = localStorage.getItem("todayPlan");
+    const storedSaved = localStorage.getItem("saved");
 
+    if (storedTodayPlan) {
+      setTodayPlan(JSON.parse(storedTodayPlan));
+    }
 
- const [isLoaded, setIsLoaded] = useState(false);
+    if (storedSaved) {
+      setSaved(JSON.parse(storedSaved));
+    }
 
-useEffect(() => {
-  const storedTodayPlan = localStorage.getItem("todayPlan");
-  const storedSaved = localStorage.getItem("saved");
+    setIsLoaded(true);
+  }, []);
 
-  if (storedTodayPlan) {
-    setTodayPlan(JSON.parse(storedTodayPlan));
-  }
+  useEffect(() => {
+    if (!isLoaded) return;
 
-  if (storedSaved) {
-    setSaved(JSON.parse(storedSaved));
-  }
-
-  setIsLoaded(true);
-}, []);
-
-useEffect(() => {
-  if (!isLoaded) return;
-
-  localStorage.setItem("todayPlan", JSON.stringify(todayPlan));
-  localStorage.setItem("saved", JSON.stringify(saved));
-}, [todayPlan, saved, isLoaded]);
-
-
-
+    localStorage.setItem("todayPlan", JSON.stringify(todayPlan));
+    localStorage.setItem("saved", JSON.stringify(saved));
+  }, [todayPlan, saved, isLoaded]);
 
   //  **********************
 
-  
   const removeWorkout = (id: number, type: "today" | "saved") => {
     if (type === "today") {
-      setTodayPlan((prev) =>
-        prev.filter((workout) => workout.id !== id)
-      );
+      setTodayPlan((prev) => prev.filter((workout) => workout.id !== id));
     }
 
     if (type === "saved") {
-      setSaved((prev) =>
-        prev.filter((workout) => workout.id !== id)
-      );
+      setSaved((prev) => prev.filter((workout) => workout.id !== id));
     }
   };
 
