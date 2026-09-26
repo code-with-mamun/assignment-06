@@ -4,8 +4,8 @@ FITLOG is a responsive workout library web application built with **Next.js, Rea
 
 ## 🚀 Live Project
 
-* Live Demo: https://fitlog1-tan.vercel.app/
-* GitHub Repository: https://github.com/mizu63/FITLOG
+- Live Demo:
+- GitHub Repository:https://github.com/code-with-mamun/assignment-06
 
 ## 📌 Project Description
 
@@ -15,27 +15,27 @@ The application is fully responsive and works across **mobile, tablet, and deskt
 
 ## ✨ Features
 
-* 🏋️ Browse a complete workout library
-* 📋 View detailed information for each workout
-* ➕ Add exercises to Today's Plan
-* ♡ Save workouts for later
-* 🗑️ Remove workouts from the plan or saved list
-* 🔢 Display total Plan and Saved workout counts
-* ↕️ Sort workouts by duration, calories, or name
-* 💾 Store Plan and Saved data using Local Storage
-* 📱 Fully responsive design for mobile, tablet, and desktop
+- 🏋️ Browse a complete workout library
+- 📋 View detailed information for each workout
+- ➕ Add exercises to Today's Plan
+- ♡ Save workouts for later
+- 🗑️ Remove workouts from the plan or saved list
+- 🔢 Display total Plan and Saved workout counts
+- ↕️ Sort workouts by duration, calories, or name
+- 💾 Store Plan and Saved data using Local Storage
+- 📱 Fully responsive design for mobile, tablet, and desktop
 
 ## 🛠️ Technologies Used
 
-* **Next.js**
-* **React**
-* **TypeScript**
-* **Tailwind CSS**
-* **React Context API**
-* **Next.js Dynamic Routing**
-* **REST API**
-* **Local Storage**
-* **Git & GitHub**
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Context API**
+- **Next.js Dynamic Routing**
+- **REST API**
+- **Local Storage**
+- **Git & GitHub**
 
 ## 📂 Main Pages
 
@@ -47,27 +47,27 @@ The landing page introduces FITLOG and provides access to the workout library.
 
 Users can browse different exercises and see basic information such as:
 
-* Exercise name
-* Muscle groups
-* Equipment
-* Duration
-* Calories
-* Rating
+- Exercise name
+- Muscle groups
+- Equipment
+- Duration
+- Calories
+- Rating
 
 ### Workout Details
 
 Each workout has a dynamic details page containing:
 
-* Exercise image
-* Description
-* Difficulty
-* Equipment
-* Sets
-* Reps
-* Duration
-* Calories burned
-* Rating
-* Instructions
+- Exercise image
+- Description
+- Difficulty
+- Equipment
+- Sets
+- Reps
+- Duration
+- Calories burned
+- Rating
+- Instructions
 
 ### My Plan
 
@@ -75,20 +75,20 @@ Users can manage their selected workouts from one place.
 
 The My Plan page includes:
 
-* Today's Plan
-* Saved workouts
-* Exercise count
-* Total duration
-* Total calories
-* Workout sorting
-* Remove workout option
+- Today's Plan
+- Saved workouts
+- Exercise count
+- Total duration
+- Total calories
+- Workout sorting
+- Remove workout option
 
 ## 💾 Data Persistence
 
 FITLOG uses **Local Storage** to keep the user's:
 
-* Today's Plan
-* Saved workouts
+- Today's Plan
+- Saved workouts
 
 This means the selected workouts remain available even after refreshing the page.
 
@@ -102,10 +102,10 @@ Workout data is loaded from the FITLOG REST API:
 
 The application is designed to work properly on:
 
-* 📱 Mobile devices
-* 📲 Tablets
-* 💻 Laptops
-* 🖥️ Desktop screens
+- 📱 Mobile devices
+- 📲 Tablets
+- 💻 Laptops
+- 🖥️ Desktop screens
 
 Tailwind CSS responsive utilities are used to create the responsive layout.
 
@@ -159,16 +159,16 @@ npm start
 
 The main goals of FITLOG are:
 
-* Create a clean workout browsing experience
-* Practice Next.js dynamic routing
-* Practice TypeScript with React
-* Manage application state using Context API
-* Persist data using Local Storage
-* Build a responsive UI with Tailwind CSS
-* Create a practical real-world frontend project
+- Create a clean workout browsing experience
+- Practice Next.js dynamic routing
+- Practice TypeScript with React
+- Manage application state using Context API
+- Persist data using Local Storage
+- Build a responsive UI with Tailwind CSS
+- Create a practical real-world frontend project
 
 ## 👨‍💻 Developer
 
-**Md. Mizu Ahmmed Jim**
+**Mamun ahmed**
 
 Frontend Developer | React | JavaScript | Next.js | TypeScript
