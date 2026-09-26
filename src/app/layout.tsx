@@ -29,9 +29,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-[#0C0D10]">
         <Cardcontext>
+          {/* Navbar  */}
           <Navbar />
           {children}
-              <ToastContainer />
+          <ToastContainer />
           <Footer />
         </Cardcontext>
       </body>
