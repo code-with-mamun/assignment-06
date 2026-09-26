@@ -35,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
           {/* for showing toastify  */}
           <ToastContainer />
+          {/* this is my footer  */}
           <Footer />
         </Cardcontext>
       </body>
