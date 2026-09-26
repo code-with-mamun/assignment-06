@@ -4,7 +4,7 @@ FITLOG is a responsive workout library web application built with **Next.js, Rea
 
 ## 🚀 Live Project
 
-- Live Demo:
+- Live Demo: https://visionary-malabi-ae1c42.netlify.app/
 - GitHub Repository:https://github.com/code-with-mamun/assignment-06
 
 ## 📌 Project Description
